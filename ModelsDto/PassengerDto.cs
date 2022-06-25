@@ -23,11 +23,11 @@ namespace SelfHostedServer.ModelsDTO.ModelsDto
 
         [Required]
         [JsonProperty("doc_type")]
-        public String Doc_type { get; set; }
+        public String DocType { get; set; }
 
         [Required]
         [JsonProperty("doc_number")]
-        public UInt64 Doc_number { get; set; }
+        public UInt64 DocNumber { get; set; }
 
         [Required]
         [YoungPassenger(2)]
@@ -41,15 +41,15 @@ namespace SelfHostedServer.ModelsDTO.ModelsDto
 
         [Required]
         [JsonProperty("passenger_type")]
-        public String Passenger_type { get; set; }
-        
+        public String PassengerType { get; set; }
+
         [Required]
         [JsonProperty("ticket_number")]
         [Range(1000000000000, 9999999999999)]
-        public UInt64 Ticket_number { get; set; }
+        public UInt64 TicketNumber { get; set; }
 
         [Required]
         [JsonProperty("ticket_type")]
-        public int Ticket_type { get; set; }
+        public int TicketType { get; set; }
     }
 }

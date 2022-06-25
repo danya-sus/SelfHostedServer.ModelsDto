@@ -9,15 +9,15 @@ namespace SelfHostedServer.ModelsDTO.ModelsDto
     {
         [Required]
         [JsonProperty("operation_type")]
-        public String Operation_type { get; set; }
+        public String OperationType { get; set; }
 
         [Required]
         [JsonProperty("operation_time")]
-        public DateTimeOffset Operation_time { get; set; }
+        public DateTimeOffset OperationTime { get; set; }
 
         [Required]
         [JsonProperty("operation_place")]
-        public String Operation_place { get; set; }
+        public String OperationPlace { get; set; }
 
         [Required]
         [JsonProperty("passenger")]
