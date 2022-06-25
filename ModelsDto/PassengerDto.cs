@@ -31,11 +31,13 @@ namespace SelfHostedServer.ModelsDTO.ModelsDto
 
         [Required]
         [YoungPassenger(2)]
-        [MaxDateOfBirth(2022)]
+        [OldPassenger(80)]
+        [MaxDateOfBirth]
         [JsonProperty("birthdate")]
         public DateTime Birthdate { get; set; }
 
         [Required]
+        [RightGender]
         [JsonProperty("gender")]
         public String Gender { get; set; }
 
