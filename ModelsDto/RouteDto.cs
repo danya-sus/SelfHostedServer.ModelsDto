@@ -8,30 +8,30 @@ namespace SelfHostedServer.ModelsDTO.ModelsDto
     {
         [Required]
         [JsonProperty("airline_code")]
-        public String Airline_code { get; set; }
+        public String AirlineCode { get; set; }
 
         [Required]
         [JsonProperty("flight_num")]
-        public int Flight_num { get; set; }
+        public int FlightNum { get; set; }
 
         [Required]
         [JsonProperty("depart_place")]
-        public String Depart_place { get; set; }
+        public String DepartPlace { get; set; }
 
         [Required]
         [JsonProperty("depart_datetime")]
-        public DateTimeOffset Depart_datetime { get; set; }
+        public DateTimeOffset DepartDatetime { get; set; }
 
         [Required]
         [JsonProperty("arrive_place")]
-        public String Arrive_place { get; set; }
+        public String ArrivePlace { get; set; }
 
         [Required]
         [JsonProperty("arrive_datetime")]
-        public DateTimeOffset Arrive_datetime { get; set; }
+        public DateTimeOffset ArriveDatetime { get; set; }
 
         [Required]
         [JsonProperty("pnr_id")]
-        public String Pnr_id { get; set; }
+        public String PnrID { get; set; }
     }
 }
