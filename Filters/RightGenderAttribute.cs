@@ -3,18 +3,17 @@ using System.ComponentModel.DataAnnotations;
 
 namespace SelfHostedServer.ModelsDTO.Filters
 {
-    public class MaxDateOfBirthAttribute : ValidationAttribute
+    public class RightGenderAttribute : ValidationAttribute
     {
-        public int Year { get; }
-        public string GetErrorMessage() => "Your date of birth from the future.";
+        public string GetErrorMessage() => "There is no such gender.";
 
-        public MaxDateOfBirthAttribute()
-        {
-        }
+        public RightGenderAttribute() { }
 
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
-            if (DateTime.Now.Year < ((DateTime)value).Year)
+            var gender = (string)value;
+
+            if (gender != "M" && gender != "F")
             {
                 return new ValidationResult(GetErrorMessage());
             }
